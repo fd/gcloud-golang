@@ -20,8 +20,8 @@ import (
 
 	"golang.org/x/net/context"
 	"golang.org/x/oauth2/google"
-	"google.golang.org/cloud"
-	"google.golang.org/cloud/storage"
+	"github.com/fd/gcloud-golang"
+	"github.com/fd/gcloud-golang/storage"
 )
 
 func Example_auth() {

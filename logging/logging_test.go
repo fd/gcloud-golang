@@ -28,7 +28,7 @@ import (
 	"golang.org/x/net/context"
 	"golang.org/x/oauth2"
 
-	"google.golang.org/cloud"
+	"github.com/fd/gcloud-golang"
 )
 
 func TestLogPayload(t *testing.T) {

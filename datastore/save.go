@@ -21,7 +21,7 @@ import (
 	"time"
 
 	"github.com/golang/protobuf/proto"
-	pb "google.golang.org/cloud/internal/datastore"
+	pb "github.com/fd/gcloud-golang/internal/datastore"
 )
 
 // saveEntity saves an EntityProto into a PropertyLoadSaver or struct pointer.

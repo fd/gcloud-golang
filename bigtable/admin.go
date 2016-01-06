@@ -22,10 +22,10 @@ import (
 	"strings"
 
 	"golang.org/x/net/context"
-	"google.golang.org/cloud"
-	btcspb "google.golang.org/cloud/bigtable/internal/cluster_service_proto"
-	bttspb "google.golang.org/cloud/bigtable/internal/table_service_proto"
-	"google.golang.org/cloud/internal/transport"
+	"github.com/fd/gcloud-golang"
+	btcspb "github.com/fd/gcloud-golang/bigtable/internal/cluster_service_proto"
+	bttspb "github.com/fd/gcloud-golang/bigtable/internal/table_service_proto"
+	"github.com/fd/gcloud-golang/internal/transport"
 	"google.golang.org/grpc"
 )
 

@@ -15,7 +15,7 @@
 // Package datastore contains a Google Cloud Datastore client.
 //
 // This package is experimental and may make backwards-incompatible changes.
-package datastore // import "google.golang.org/cloud/datastore"
+package datastore // import "github.com/fd/gcloud-golang/datastore"
 
 import (
 	"errors"
@@ -24,9 +24,9 @@ import (
 
 	"github.com/golang/protobuf/proto"
 	"golang.org/x/net/context"
-	"google.golang.org/cloud"
-	pb "google.golang.org/cloud/internal/datastore"
-	"google.golang.org/cloud/internal/transport"
+	"github.com/fd/gcloud-golang"
+	pb "github.com/fd/gcloud-golang/internal/datastore"
+	"github.com/fd/gcloud-golang/internal/transport"
 )
 
 const prodAddr = "https://www.googleapis.com/datastore/v1beta2/datasets/"

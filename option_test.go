@@ -17,7 +17,7 @@ package cloud
 import (
 	"testing"
 
-	"google.golang.org/cloud/internal/opts"
+	"github.com/fd/gcloud-golang/internal/opts"
 )
 
 // Check that the slice passed into WithScopes is copied.

@@ -26,8 +26,8 @@ import (
 
 	"golang.org/x/net/context"
 	api "google.golang.org/api/logging/v1beta3"
-	"google.golang.org/cloud"
-	"google.golang.org/cloud/internal/transport"
+	"github.com/fd/gcloud-golang"
+	"github.com/fd/gcloud-golang/internal/transport"
 )
 
 // Scope is the OAuth2 scope necessary to use Google Cloud Logging.

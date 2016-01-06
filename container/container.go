@@ -16,7 +16,7 @@
 //
 // For more information about the API,
 // see https://cloud.google.com/container-engine/docs
-package container // import "google.golang.org/cloud/container"
+package container // import "github.com/fd/gcloud-golang/container"
 
 import (
 	"errors"
@@ -25,7 +25,7 @@ import (
 
 	"golang.org/x/net/context"
 	raw "google.golang.org/api/container/v1"
-	"google.golang.org/cloud/internal"
+	"github.com/fd/gcloud-golang/internal"
 )
 
 type Type string

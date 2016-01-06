@@ -21,8 +21,8 @@ import (
 	"github.com/golang/protobuf/proto"
 	"golang.org/x/net/context"
 
-	pb "google.golang.org/cloud/internal/datastore"
-	"google.golang.org/cloud/internal/transport"
+	pb "github.com/fd/gcloud-golang/internal/datastore"
+	"github.com/fd/gcloud-golang/internal/transport"
 )
 
 // ErrConcurrentTransaction is returned when a transaction is rolled back due

@@ -40,7 +40,7 @@ creating a new OAuth "Client ID", storing the JSON key somewhere accessible, and
 	client, err := bigtable.NewClient(ctx, project, zone, cluster, cloud.WithTokenSource(config.TokenSource(ctx)))
 	...
 Here, `google` means the golang.org/x/oauth2/google package
-and `cloud` means the google.golang.org/cloud package.
+and `cloud` means the github.com/fd/gcloud-golang package.
 
 Reading
 
@@ -86,7 +86,7 @@ To increment an encoded value in one cell,
 	r, err := tbl.ApplyReadModifyWrite(ctx, "com.google.cloud", rmw)
 	...
 */
-package bigtable // import "google.golang.org/cloud/bigtable"
+package bigtable // import "github.com/fd/gcloud-golang/bigtable"
 
 // Scope constants for authentication credentials.
 // These should be used when using credential creation functions such as oauth.NewServiceAccountFromFile.

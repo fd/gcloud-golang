@@ -25,7 +25,7 @@ import (
 
 	"golang.org/x/net/context"
 	"golang.org/x/oauth2/google"
-	"google.golang.org/cloud/bigquery"
+	"github.com/fd/gcloud-golang/bigquery"
 )
 
 var (

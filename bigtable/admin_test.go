@@ -7,8 +7,8 @@ import (
 	"time"
 
 	"golang.org/x/net/context"
-	"google.golang.org/cloud"
-	"google.golang.org/cloud/bigtable/bttest"
+	"github.com/fd/gcloud-golang"
+	"github.com/fd/gcloud-golang/bigtable/bttest"
 	"google.golang.org/grpc"
 )
 

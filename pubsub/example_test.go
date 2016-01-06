@@ -22,8 +22,8 @@ import (
 	"golang.org/x/net/context"
 	"golang.org/x/oauth2"
 	"golang.org/x/oauth2/google"
-	"google.golang.org/cloud"
-	"google.golang.org/cloud/pubsub"
+	"github.com/fd/gcloud-golang"
+	"github.com/fd/gcloud-golang/pubsub"
 )
 
 // TODO(jbd): Remove after Go 1.4.

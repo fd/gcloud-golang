@@ -19,7 +19,7 @@ import (
 	"reflect"
 	"time"
 
-	pb "google.golang.org/cloud/internal/datastore"
+	pb "github.com/fd/gcloud-golang/internal/datastore"
 )
 
 var (

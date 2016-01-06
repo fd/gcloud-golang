@@ -31,9 +31,9 @@ import (
 
 	"golang.org/x/oauth2"
 	"golang.org/x/oauth2/google"
-	"google.golang.org/cloud"
-	"google.golang.org/cloud/compute/metadata"
-	"google.golang.org/cloud/pubsub"
+	"github.com/fd/gcloud-golang"
+	"github.com/fd/gcloud-golang/compute/metadata"
+	"github.com/fd/gcloud-golang/pubsub"
 )
 
 var (

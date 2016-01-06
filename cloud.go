@@ -14,13 +14,13 @@
 
 // Package cloud contains Google Cloud Platform APIs related types
 // and common functions.
-package cloud // import "google.golang.org/cloud"
+package cloud // import "github.com/fd/gcloud-golang"
 
 import (
 	"net/http"
 
+	"github.com/fd/gcloud-golang/internal"
 	"golang.org/x/net/context"
-	"google.golang.org/cloud/internal"
 )
 
 // NewContext returns a new context that uses the provided http.Client.

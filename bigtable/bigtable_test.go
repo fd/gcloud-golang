@@ -29,9 +29,9 @@ import (
 
 	"github.com/golang/protobuf/proto"
 	"golang.org/x/net/context"
-	"google.golang.org/cloud"
-	"google.golang.org/cloud/bigtable/bttest"
-	btspb "google.golang.org/cloud/bigtable/internal/service_proto"
+	"github.com/fd/gcloud-golang"
+	"github.com/fd/gcloud-golang/bigtable/bttest"
+	btspb "github.com/fd/gcloud-golang/bigtable/internal/service_proto"
 	"google.golang.org/grpc"
 )
 

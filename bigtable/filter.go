@@ -20,7 +20,7 @@ import (
 	"fmt"
 	"strings"
 
-	btdpb "google.golang.org/cloud/bigtable/internal/data_proto"
+	btdpb "github.com/fd/gcloud-golang/bigtable/internal/data_proto"
 )
 
 // A Filter represents a row filter.

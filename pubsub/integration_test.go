@@ -21,7 +21,7 @@ import (
 	"testing"
 	"time"
 
-	"google.golang.org/cloud/internal/testutil"
+	"github.com/fd/gcloud-golang/internal/testutil"
 )
 
 func TestAll(t *testing.T) {

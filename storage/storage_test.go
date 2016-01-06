@@ -24,7 +24,7 @@ import (
 	"time"
 
 	"golang.org/x/net/context"
-	"google.golang.org/cloud"
+	"github.com/fd/gcloud-golang"
 )
 
 func TestSignedURL(t *testing.T) {

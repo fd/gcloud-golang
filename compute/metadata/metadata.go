@@ -17,7 +17,7 @@
 //
 // This package is a wrapper around the GCE metadata service,
 // as documented at https://developers.google.com/compute/docs/metadata.
-package metadata // import "google.golang.org/cloud/compute/metadata"
+package metadata // import "github.com/fd/gcloud-golang/compute/metadata"
 
 import (
 	"encoding/json"
@@ -31,7 +31,7 @@ import (
 	"sync"
 	"time"
 
-	"google.golang.org/cloud/internal"
+	"github.com/fd/gcloud-golang/internal"
 )
 
 type cachedValue struct {

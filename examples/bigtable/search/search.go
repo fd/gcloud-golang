@@ -40,7 +40,7 @@ import (
 	"unicode"
 
 	"golang.org/x/net/context"
-	"google.golang.org/cloud/bigtable"
+	"github.com/fd/gcloud-golang/bigtable"
 )
 
 var (

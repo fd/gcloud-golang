@@ -17,8 +17,8 @@ package cloud
 import (
 	"net/http"
 
+	"github.com/fd/gcloud-golang/internal/opts"
 	"golang.org/x/oauth2"
-	"google.golang.org/cloud/internal/opts"
 	"google.golang.org/grpc"
 )
 

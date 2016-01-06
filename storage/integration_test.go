@@ -32,8 +32,8 @@ import (
 
 	"golang.org/x/net/context"
 
-	"google.golang.org/cloud"
-	"google.golang.org/cloud/internal/testutil"
+	"github.com/fd/gcloud-golang"
+	"github.com/fd/gcloud-golang/internal/testutil"
 )
 
 var (

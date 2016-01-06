@@ -31,8 +31,8 @@ import (
 	"time"
 
 	"golang.org/x/net/context"
-	"google.golang.org/cloud/bigtable"
-	"google.golang.org/cloud/bigtable/internal/cbtrc"
+	"github.com/fd/gcloud-golang/bigtable"
+	"github.com/fd/gcloud-golang/bigtable/internal/cbtrc"
 )
 
 var (

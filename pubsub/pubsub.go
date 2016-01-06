@@ -18,7 +18,7 @@
 //
 // More information about Google Cloud Pub/Sub is available at
 // https://cloud.google.com/pubsub/docs
-package pubsub // import "google.golang.org/cloud/pubsub"
+package pubsub // import "github.com/fd/gcloud-golang/pubsub"
 
 import (
 	"encoding/base64"
@@ -29,9 +29,9 @@ import (
 
 	"google.golang.org/api/googleapi"
 	raw "google.golang.org/api/pubsub/v1"
-	"google.golang.org/cloud"
-	"google.golang.org/cloud/internal"
-	"google.golang.org/cloud/internal/transport"
+	"github.com/fd/gcloud-golang"
+	"github.com/fd/gcloud-golang/internal"
+	"github.com/fd/gcloud-golang/internal/transport"
 
 	"golang.org/x/net/context"
 )
