@@ -482,3 +482,48 @@ type flushCall struct {
 	donec chan struct{} // closed when response is in
 	err   error         // error is valid after wg is Done
 }
+
+
+
+
+type HttpRequest struct {
+	// CacheHit: Whether or not an entity was served from cache (with or
+	// without validation).
+	CacheHit bool `json:"cacheHit,omitempty"`
+
+	// Referer: Referer (a.k.a. referrer) URL of request, as defined in
+	// http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html.
+	Referer string `json:"referer,omitempty"`
+
+	// RemoteIp: IP address of the client who issues the HTTP request. Could
+	// be either IPv4 or IPv6.
+	RemoteIp string `json:"remoteIp,omitempty"`
+
+	// RequestMethod: Request method, such as `GET`, `HEAD`, `PUT` or
+	// `POST`.
+	RequestMethod string `json:"requestMethod,omitempty"`
+
+	// RequestSize: Size of the HTTP request message in bytes, including
+	// request headers and the request body.
+	RequestSize int64 `json:"requestSize,omitempty,string"`
+
+	// RequestUrl: Contains the scheme (http|https), the host name, the path
+	// and the query portion of the URL that was requested.
+	RequestUrl string `json:"requestUrl,omitempty"`
+
+	// ResponseSize: Size of the HTTP response message in bytes sent back to
+	// the client, including response headers and response body.
+	ResponseSize int64 `json:"responseSize,omitempty,string"`
+
+	// Status: A response code indicates the status of response, e.g., 200.
+	Status int64 `json:"status,omitempty"`
+
+	// UserAgent: User agent sent by the client, e.g., "Mozilla/4.0
+	// (compatible; MSIE 6.0; Windows 98; Q312461; .NET CLR 1.0.3705)".
+	UserAgent string `json:"userAgent,omitempty"`
+
+	// ValidatedWithOriginServer: Whether or not the response was validated
+	// with the origin server before being served from cache. This field is
+	// only meaningful if cache_hit is True.
+	ValidatedWithOriginServer bool `json:"validatedWithOriginServer,omitempty"`
+}
