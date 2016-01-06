@@ -15,7 +15,7 @@
 // Package logging contains a Google Cloud Logging client.
 //
 // This package is experimental and subject to API changes.
-package logging // import "google.golang.org/cloud/logging"
+package logging
 
 import (
 	"errors"
@@ -233,6 +233,22 @@ func (c *Client) apiEntry(e Entry) (*api.LogEntry, error) {
 		ent.TextPayload = p
 	case []byte:
 		ent.TextPayload = string(p)
+
+		// custom
+	case HttpRequest:
+		ent.HttpRequest = &api.HttpRequest{
+			CacheHit:                  p.CacheHit,
+			Referer:                   p.Referer,
+			RemoteIp:                  p.RemoteIp,
+			RequestMethod:             p.RequestMethod,
+			RequestSize:               p.RequestSize,
+			RequestUrl:                p.RequestUrl,
+			ResponseSize:              p.ResponseSize,
+			Status:                    p.Status,
+			UserAgent:                 p.UserAgent,
+			ValidatedWithOriginServer: p.ValidatedWithOriginServer,
+		}
+
 	default:
 		ent.StructPayload = api.LogEntryStructPayload(p)
 	}
